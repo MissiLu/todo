@@ -5,14 +5,30 @@
  <h1>todolist</h1>   
 </head>
 <body> 
- <ul class="hr">
-                
-               
-    <p>add item</p>
-    <input alt="">
-    <p><input type="button" value="add"></p>
-</ul>
-    <p>list</p>
-    <p>completed</p>
+    <div class="hr">
+            add item
+        <input type="text" id="myText">
+        <!-- <p><input type="button" value="add"></p> -->
+        <button onclick="addToList()">add</button>
+    </div>
+
+    <div>List
+        <ul id="list">
+        </ul>
+    </div>
+    <div>completed
+            <ul>
+
+            </ul>     <!-- неотсортированный список-->   
+    </div>
+    
+   
 </body>
+<!-- <script>
+        // function myFunction() {
+        //     var todoItem = "<li>" + document.getElementById("myText").value +"</li>"
+        //     document.getElementById("myText").value = ""
+        //   document.getElementById("list").innerHTML += todoItem;
+        // }
+        </script> -->
 </html>
